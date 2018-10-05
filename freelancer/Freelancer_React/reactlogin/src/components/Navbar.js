@@ -10,18 +10,18 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-light">
 
-  <a className="navbar-brand" href="http://localhost:3001"><img src={Image} height ='36' width='145'></img></a>
+  <a className="navbar-brand" href="http://52.53.235.37:3001"><img src={Image} height ='36' width='145'></img></a>
 
   
   <ul className="list-inline">
   <li className="list-inline-item">
-      <a className="nav-link" href="http://localhost:3001/postproject">Post Project</a>
+      <a className="nav-link" href="http://52.53.235.37:3001/postproject">Post Project</a>
     </li>
     <li className="list-inline-item">
-    <a className="nav-link " href="http://localhost:3001/login">Login</a>
+    <a className="nav-link " href="http://52.53.235.37:3001/login">Login</a>
     </li>
     <li className="list-inline-item">
-      <a className="nav-link" href="http://localhost:3001/signup">Signup</a>
+      <a className="nav-link" href="http://52.53.235.37:3001/signup">Signup</a>
     </li>
    
     

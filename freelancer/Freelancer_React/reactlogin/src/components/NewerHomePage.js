@@ -530,6 +530,7 @@ class NewerHomePage extends Component {
 
                 <Route exact path="/login" render={() => (
                     <div>
+                        <Navbar/>
                         <Message message={this.state.message}/>
                         <Login handleSubmit={this.handleSubmit}/>
                         
@@ -540,6 +541,7 @@ class NewerHomePage extends Component {
 
                 <Route exact path="/signup" render={() => (
                     <div>
+                        <Navbar/>
                         <Message message={this.state.message}/>
                         <Signup handleSubmit1={this.handleSubmit1}/>
                         

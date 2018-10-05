@@ -71,14 +71,8 @@ class Profile extends Component {
         return (
             <div className="container-fluid">
                 <Navbar_Welcome/>
-                <div className="left1">
-                    <div className="left">
-             <h5>  <b> Profile Image:</b></h5>
-                <br/><img src={this.state.image} height='200' width='250'></img>
-                <br/>
-                <br/>
-                <button className="btn btn-primary">Edit</button>
-                </div>
+                
+                    
                 <div>
                 <div className="row justify-content-md-center">
                 
@@ -181,7 +175,7 @@ class Profile extends Component {
                         </div>
                         <br/>
                         
-                    </div>
+                    
 
             </div>
             

@@ -27,24 +27,32 @@ class Signup extends Component {
         return (
             
 
-            <div className="row justify-content-md-center col-md-8">
-            <img className="d-block w-50" src={Image}  height="150" width="100"alt="Second slide"></img>
+            <div className="row justify-content-md-center col-md-12">
 
-            <br/>
-                <div className="col-md-4">
+           
+            
+                <div>
                     <form>
-                        <div className="form-group">
-                        <br/><br/><br/><br/><br/>
-                            <h1>Signup Page</h1>
-                        </div>
-                        <div className="form-group">
+                         
+                        <div id="login-column" className="col-md-12">
                         
-                        <br/>
-                        <input
+                <div className="box">
+                    <div className="shape1"></div>
+                    <div className="shape2"></div>
+                    <div className="shape3"></div>
+                    <div className="shape4"></div>
+                    <div className="shape5"></div>
+                    <div className="shape6"></div>
+                    <div className="shape7"></div>
+                    <div className="float">
+                        <form className="form" action="">
+                            <div className="form-group">
+                                <label for="username" class="text-white">Username:</label><br/>
+                                <input
                                 className="form-control"
                                 type="text"
                                 label="Username"
-                                placeholder="Enter Email Address"
+                               
                                 value={this.state.email_address}
                                 onChange={(event) => {      //setState is to change the state on some input
                                     this.setState({
@@ -52,60 +60,58 @@ class Signup extends Component {
                                     });
                                 }}
                                 
-                            />
-                            <br/>
-                           
-                             <input
-                                className="form-control"
-                                type="text"
-                                label="Username"
-                                placeholder="Enter Username"
-                                value={this.state.username}
-                                onChange={(event) => {      //setState is to change the state on some input
-                                    this.setState({
-                                        username: event.target.value
-                                    });
-                                }}
-                                
-                            />
-                            
-                        </div>
-                       
-                        <div className="form-group">
-                            <input
+                            ></input>
+                            </div>
+                            <div className="form-group">
+                                <label for="password" class="text-white">Password:</label><br/>
+                                <input
                                 className="form-control"
                                 type="password"
                                 label="password"
-                                placeholder="Enter Password"
                                 value={this.state.password}
                                 onChange={(event) => {          //setState is to change the state on some input
                                     this.setState({
                                         password: event.target.value
                                     });
                                 }}
-                            />
-                        </div>
-                        <br/>
-                        <div className="form-group">
+                            ></input>
+                            </div>
+                            <div className="form-group">
                             <button
-                                className="btn btn-primary"
+                                className="btn btn-success"
                                 type="button"
-                                onClick={() => this.props.handleSubmit1(this.state)}  //since this is child to NewerHomePage
+                                onClick={() => this.props.handleSubmit(this.state)}  //since this is child to NewerHomePage
                                                                                      //it cannot change state directly so using
                                                                                      //props to pass it to main class(NeweHomePage)
                                                                                      //onclick will pass the current state to main class
                                 
                                 >  
-                                Create Account
+                                Login
                             </button>
+                            &nbsp; &nbsp; &nbsp;
                             <br/>
-                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-                            Already member?
+                           
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    
+                        
+                       
+                               
+                      
                             
-                            <Link to="/login">Login</Link>
-                        </div>
-                    </form>
+                        
+                    
                 </div>
+                </form> 
+                </div>
+
+                <br/>
+                
+
+                
+           
             </div>
         );
     }

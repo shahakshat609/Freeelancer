@@ -24,7 +24,7 @@ var mongoSessionURL = 'mongodb://shahakshat:Axtshah14@ds223509.mlab.com:23509/fr
 
 var cors = require('cors');
 var corsOptions = {
-  origin: 'http://localhost:3001',
+  origin: 'http://52.53.235.37:3001',
   credentials: true,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }

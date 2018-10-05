@@ -5,6 +5,7 @@ import Image from './download.png';
 import Image1 from './image.jpg';
 
 import '../css/Login.css'
+import Navbar from './Navbar';
 class Login extends Component {
 
     static propTypes = {
@@ -28,6 +29,7 @@ class Login extends Component {
     render() {
         
         return (
+            
             <div className="row justify-content-md-center col-md-12">
 
            
@@ -87,7 +89,7 @@ class Login extends Component {
                                                                                      //onclick will pass the current state to main class
                                 
                                 >  
-                                Submit
+                                Login
                             </button>
                             &nbsp; &nbsp; &nbsp;
                             <br/>
@@ -107,6 +109,9 @@ class Login extends Component {
                 </div>
                 </form> 
                 </div>
+
+                <br/>
+                
 
                 
            
